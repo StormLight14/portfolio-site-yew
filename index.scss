@@ -21,6 +21,14 @@ h1 + .subtitle {
   margin-top: -1em;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 10px;
+  height: 1.5rem;     
+}
+
 .navbar {
   margin: 5px;
   ul {
