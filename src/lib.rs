@@ -24,6 +24,7 @@ pub fn navbar() -> Html {
             // in reverse order
                 <div class="nav_item">
                     <li><Link<Route> to={Route::Contact}>{ "contact.txt" }</Link<Route>></li>
+                    <li><Link<Route> to={Route::Projects}>{ "projects.txt" }</Link<Route>></li>
                     <li><Link<Route> to={Route::Experience}>{ "experience.txt" }</Link<Route>></li>
                     <li><Link<Route> to={Route::About}>{ "about.txt" }</Link<Route>></li>
                     <li><code>{"[portfolio@storm ~]$"}</code></li>

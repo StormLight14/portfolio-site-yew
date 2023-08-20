@@ -5,7 +5,7 @@ pub fn about() -> Html {
     html! {
         <>
             <h1>{"> About Me"}</h1>
-            <p>{"Some of my interests include software development, cybersecurity, Linux, and playing the guitar!"}</p>
+            <p>{"Interested in software development, game development, cybersecurity, and Linux!"}</p>
             //<footer>{"(I use arch btw)"}</footer>
         </>
     }
