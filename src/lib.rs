@@ -18,11 +18,16 @@ pub fn navbar() -> Html {
     html! {
         <div class="navbar">
             <ul>
+                <div class="link">
+                    <li><a href="https://github.com/StormLight14" target="_blank"><img src="img/github-white.png"/></a></li>
+                </div>
             // in reverse order
-                <li><Link<Route> to={Route::Contact}>{ "03. contact" }</Link<Route>></li>
-                <li><Link<Route> to={Route::Experience}>{ "02. experience" }</Link<Route>></li>
-                <li><Link<Route> to={Route::About}>{ "01. about" }</Link<Route>></li>
-                <li><code>{"[portfolio@storm ~]$"}</code></li>
+                <div class="nav_item">
+                    <li><Link<Route> to={Route::Contact}>{ "contact.txt" }</Link<Route>></li>
+                    <li><Link<Route> to={Route::Experience}>{ "experience.txt" }</Link<Route>></li>
+                    <li><Link<Route> to={Route::About}>{ "about.txt" }</Link<Route>></li>
+                    <li><code>{"[portfolio@storm ~]$"}</code></li>
+                </div>
             </ul>
         </div>
     }

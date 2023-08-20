@@ -7,7 +7,7 @@ body {
 body {
   //background: linear-gradient(to bottom right, #444444, #009a5b);
   background: #000000;
-  font-size: 1.5rem;
+  font-size: 25px;
 }
 
 main {
@@ -16,16 +16,13 @@ main {
   text-align: center;
 }
 
-.logo {
-  height: 20em;
-}
-
 h1 + .subtitle {
   display: block;
   margin-top: -1em;
 }
 
 .navbar {
+  margin: 5px;
   ul {
     list-style-type: none;
     margin: 0;
@@ -33,17 +30,30 @@ h1 + .subtitle {
     overflow: hidden;
     background-color: #000000;
   }
-  
-  li {
+
+  .nav_item li {
     float: right;
+  }
+
+  .link li {
+    float: left;
+  }
+
+  .link img {
+    width: 40px;
+    height: auto;
   }
   
   li a, code {
     display: block;
-    color: rgb(21, 255, 0);
+    color: #00FF41;
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
+  }
+
+  .num {
+    color: #008f11;
   }
   
   /* Change the link color to #111 (black) on hover */
