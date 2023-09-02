@@ -12,4 +12,3 @@ pub fn about() -> Html {
         </main>
     }
 }
-
