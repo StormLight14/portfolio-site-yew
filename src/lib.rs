@@ -1,16 +1,18 @@
+use router::{switch, Route};
 use yew::prelude::*;
 use yew_router::prelude::*;
-use router::{Route, switch};
 
-mod router;
 mod components;
+mod router;
 
 pub fn convert_list(list: &Vec<&str>) -> Vec<Html> {
-    list.iter().map(|item| html!{<li>{item}</li>}).collect()
+    list.iter().map(|item| html! {<li>{item}</li>}).collect()
 }
 
 pub fn convert_list_uppercase(list: &Vec<&str>) -> Vec<Html> {
-    list.iter().map(|item| html!{<li>{item.to_uppercase()}</li>}).collect()
+    list.iter()
+        .map(|item| html! {<li>{item.to_uppercase()}</li>})
+        .collect()
 }
 
 #[function_component(Navbar)]
@@ -23,7 +25,7 @@ pub fn navbar() -> Html {
                 </div>
             // in reverse order
                 <div class="nav_item">
-                    <li><Link<Route> to={Route::Contact}>{ "contact.txt" }</Link<Route>></li>
+                    //<li><Link<Route> to={Route::Contact}>{ "contact.txt" }</Link<Route>></li>
                     <li><Link<Route> to={Route::Projects}>{ "projects.txt" }</Link<Route>></li>
                     <li><Link<Route> to={Route::Experience}>{ "experience.txt" }</Link<Route>></li>
                     <li><Link<Route> to={Route::About}>{ "about.txt" }</Link<Route>></li>
@@ -33,7 +35,6 @@ pub fn navbar() -> Html {
         </div>
     }
 }
-
 
 #[function_component(App)]
 pub fn app() -> Html {
@@ -46,3 +47,4 @@ pub fn app() -> Html {
         </main>
     }
 }
+
